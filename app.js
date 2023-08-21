@@ -5,7 +5,7 @@ const port = 3000
 
 
 
-const allowedOrigins = ['https://gregarious-meerkat-c611cb.netlify.app/'];
+const allowedOrigins = ['https://gregarious-meerkat-c611cb.netlify.app/', 'http://localhost:3000/'];
 
 app.use(cors({
     origin: (origin, callback) => {
