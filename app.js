@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const cors = requite('cors')
+const cors = require('cors')
 
 app.use((req, res) => {
     res.header("Access-Control-Allow-Origin", "*"); // 모든 도메인 허용
