@@ -5,18 +5,7 @@ const port = 3000
 
 
 
-const allowedOrigins = ['https://gregarious-meerkat-c611cb.netlify.app/', 'http://localhost:3000/'];
-
-app.use(cors({
-    origin: (origin, callback) => {
-        if (allowedOrigins.indexOf(origin) === -1) {
-            const errMsg = '허용되지 않은 도메인에 의한 CORS 요청입니다.';
-            return callback(new Error(errMsg), false);
-        }
-
-        return callback(null, true);
-    },
-}));
+app.use(cors());
 
 app.get('/', (req, res) => { res.send('hellosss world') })
 
