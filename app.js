@@ -11,6 +11,7 @@ app.get('/', (req, res) => { res.send('hellosss world') })
 
 //test
 app.get('/api/test', (req, res) => {
+    console.log(req)
     return res.json({ text: 'test success' })
 })
 
