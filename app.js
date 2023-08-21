@@ -4,10 +4,7 @@ const app = express()
 const port = 3000
 
 app.use(cors({
-    origin: [
-        'http://localhost:3000',
-        'https://gregarious-meerkat-c611cb.netlify.app/'
-    ]
+    origin: '*'
 }));
 
 app.get('/', (req, res) => { res.send('hellosss world') })
